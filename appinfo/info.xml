@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<info>
+    <id>mailsharenewsplugin</id>
+    <name>Mail Share News Plugin</name>
+    <description></description>
+    <licence>AGPL</licence>
+    <author>Alessandro Cosentino</author>
+    <version>0.0.1</version>
+    <requiremin>7.0.3</requiremin>
+</info>
