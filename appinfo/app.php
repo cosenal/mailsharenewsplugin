@@ -12,11 +12,15 @@
 namespace OCA\MailShareNewsPlugin\AppInfo;
 
 
-if (\OCP\App::isEnabled('news') && 
-    class_exists('OCA\News\Plugin\Client\Plugin')) {
+if (\OCP\App::isEnabled('news')) {
+    
+    \OC_App::loadApp('news');
+    
+    if (class_exists('OCA\News\Plugin\Client\Plugin')) {
 
         \OCA\News\Plugin\Client\Plugin::registerScript('mailsharenewsplugin', 
             'script');
         \OCA\News\Plugin\Client\Plugin::registerStyle('mailsharenewsplugin', 
             'style');
+    }
 }
